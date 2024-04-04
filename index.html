@@ -306,10 +306,6 @@
     </div>
 
     <script>
-
-      const audio = new Audio("./eltaxi.mp3");
-      audio.play();
-
       document.getElementById("BVer").addEventListener("click", function () {
         document.getElementById("resultado").style.display = "block";
       });
@@ -317,6 +313,8 @@
       document
         .getElementById("BotonCerrar")
         .addEventListener("click", function () {
+          const audio = new Audio("./eltaxi.mp3");
+          audio.play();
           document.getElementById("resultado").style.display = "none";
           document.querySelector(".Contenedor-Binicio").style.display = "none";
 
